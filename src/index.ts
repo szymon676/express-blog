@@ -1,4 +1,6 @@
 import express from 'express';
+import posts from './data/posts.json'
+
 
 const app = express();
 
