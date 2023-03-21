@@ -1,0 +1,28 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Getting Started with Express.js",
+      "author": "John Smith",
+      "date": "2021-06-01",
+      "url": "https://example.com/getting-started-with-express",
+      "description": "A beginner's guide to using Express.js for building web applications."
+    },
+    {
+      "id": 2,
+      "title": "Handling HTTP Requests in Express.js",
+      "author": "Jane Doe",
+      "date": "2021-07-05",
+      "url": "https://example.com/handling-http-requests-in-express",
+      "description": "An in-depth look at how to handle HTTP requests in Express.js."
+    },
+    {
+      "id": 3,
+      "title": "Authentication and Authorization in Express.js",
+      "author": "Bob Johnson",
+      "date": "2021-08-12",
+      "url": "https://example.com/authentication-and-authorization-in-express",
+      "description": "Learn how to implement authentication and authorization in your Express.js applications."
+    }
+  ]
+}
