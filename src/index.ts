@@ -4,11 +4,11 @@ import posts from './data/posts.json'
 
 const app = express();
 
-app.get('/', (request , response) => {
+app.get('/posts', (request , response) => {
     response.json(posts)
 });
 
-app.get('/:Id', (request, response) => {
+app.get('/posts/:Id', (request, response) => {
     const {Id} = request.params
     response.json({ post: posts.blogs.filter(post => post.id === +Id) })
 })
