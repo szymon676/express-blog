@@ -4,7 +4,6 @@ import { Post } from './types/post';
 
 const app = express();
 
-<<<<<<< HEAD
 app.use(express.json());
 
 app.post('/posts', (request,response) => {
@@ -21,7 +20,7 @@ app.post('/posts', (request,response) => {
 app.get('/posts', (request, response) => {
   response.send(posts);
 });
-=======
+
 app.get('/posts', (request , response) => {
     response.json(posts)
 });
@@ -29,9 +28,7 @@ app.get('/posts', (request , response) => {
 app.get('/posts/:Id', (request, response) => {
     const {Id} = request.params
     response.json({ post: posts.blogs.filter(post => post.id === +Id) })
-})
-
->>>>>>> 74ddcdda1c4d1050eb6a27c2759f0df4a90d543f
+};
 
 app.get('/posts/:id', (request, response) => {
   const blog = posts.blogs.find((blog) => String(blog.id) == String(request.params.id));
